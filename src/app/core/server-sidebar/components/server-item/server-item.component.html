@@ -1,0 +1,3 @@
+@let initial = server()?.initial ?? 'R';
+
+<div [class.active]="server()?.active" class="server-dot">{{ initial }}</div>

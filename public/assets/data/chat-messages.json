@@ -1,0 +1,361 @@
+[
+  {
+    "id": "m1",
+    "author": {
+      "id": "u1",
+      "name": "Jane Doe",
+      "avatarUrl": "https://i.pravatar.cc/150?img=1",
+      "languages": ["RUS"]
+    },
+    "text": "Привет! Как твои дела?",
+    "lang": "RUS",
+    "version": 1,
+    "timestamp": "2025-11-23T10:00:00.000Z",
+    "translations": {
+      "ENG": {
+        "message": "Hi! How are you?",
+        "version": 1,
+        "timestamp": "2025-11-23T10:00:05.000Z"
+      }
+    },
+    "reactions": [{ "key": "❤️", "count": 2 }]
+  },
+  {
+    "id": "m2",
+    "author": {
+      "id": "u2",
+      "name": "John Smith",
+      "avatarUrl": "https://i.pravatar.cc/150?img=2",
+      "languages": ["ENG"]
+    },
+    "text": "I’m good! Been learning RxJS 8.",
+    "lang": "ENG",
+    "version": 1,
+    "timestamp": "2025-11-23T10:01:00.000Z",
+    "translations": {
+      "RUS": {
+        "message": "Я в порядке! Учусь RxJS 8.",
+        "version": 1,
+        "timestamp": "2025-11-23T10:01:05.000Z"
+      }
+    }
+  },
+  {
+    "id": "m3",
+    "author": {
+      "id": "u3",
+      "name": "Carlos Ruiz",
+      "avatarUrl": "https://i.pravatar.cc/150?img=3",
+      "languages": ["ES"]
+    },
+    "text": "Nos vemos mañana en la reunión.",
+    "lang": "ES",
+    "version": 1,
+    "timestamp": "2025-11-23T10:02:00.000Z",
+    "translations": {
+      "ENG": {
+        "message": "See you tomorrow at the meeting.",
+        "version": 1,
+        "timestamp": "2025-11-23T10:02:10.000Z"
+      }
+    }
+  },
+  {
+    "id": "m4",
+    "author": {
+      "id": "u4",
+      "name": "Marie Dupont",
+      "avatarUrl": "https://i.pravatar.cc/150?img=4",
+      "languages": ["FR"]
+    },
+    "text": "Je viens de tester la nouvelle API de traduction.",
+    "lang": "FR",
+    "version": 1,
+    "timestamp": "2025-11-23T10:03:00.000Z",
+    "translations": {
+      "ENG": {
+        "message": "I just tested the new translation API.",
+        "version": 1,
+        "timestamp": "2025-11-23T10:03:05.000Z"
+      }
+    }
+  },
+  {
+    "id": "m5",
+    "author": {
+      "id": "u2",
+      "name": "John Smith",
+      "avatarUrl": "https://i.pravatar.cc/150?img=2",
+      "languages": ["ENG"]
+    },
+    "text": "That’s awesome! Does it support streaming?",
+    "lang": "ENG",
+    "version": 1,
+    "timestamp": "2025-11-23T10:04:00.000Z",
+    "translations": {}
+  },
+  {
+    "id": "m6",
+    "author": {
+      "id": "u1",
+      "name": "Jane Doe",
+      "avatarUrl": "https://i.pravatar.cc/150?img=1",
+      "languages": ["RUS"]
+    },
+    "text": "Пока нет, но мы можем добавить поддержку.",
+    "lang": "RUS",
+    "version": 1,
+    "timestamp": "2025-11-23T10:05:00.000Z",
+    "translations": {
+      "ENG": {
+        "message": "Not yet, but we can add support.",
+        "version": 1,
+        "timestamp": "2025-11-23T10:05:10.000Z"
+      }
+    }
+  },
+  {
+    "id": "m7",
+    "author": {
+      "id": "u3",
+      "name": "Carlos Ruiz",
+      "avatarUrl": "https://i.pravatar.cc/150?img=3",
+      "languages": ["ES"]
+    },
+    "text": "¿Han probado el modo oscuro en la nueva UI?",
+    "lang": "ES",
+    "version": 1,
+    "timestamp": "2025-11-23T10:06:00.000Z",
+    "translations": {}
+  },
+  {
+    "id": "m8",
+    "author": {
+      "id": "u4",
+      "name": "Marie Dupont",
+      "avatarUrl": "https://i.pravatar.cc/150?img=4",
+      "languages": ["FR"]
+    },
+    "text": "Oui! C’est magnifique maintenant.",
+    "lang": "FR",
+    "version": 1,
+    "timestamp": "2025-11-23T10:07:00.000Z",
+    "translations": {
+      "ENG": {
+        "message": "Yes! It’s beautiful now.",
+        "version": 1,
+        "timestamp": "2025-11-23T10:07:05.000Z"
+      }
+    }
+  },
+  {
+    "id": "m9",
+    "author": {
+      "id": "u5",
+      "name": "Yuki Tanaka",
+      "avatarUrl": "https://i.pravatar.cc/150?img=5",
+      "languages": ["JA"]
+    },
+    "text": "新しいテーマはとてもクールです！",
+    "lang": "JA",
+    "version": 1,
+    "timestamp": "2025-11-23T10:08:00.000Z",
+    "translations": {
+      "ENG": {
+        "message": "The new theme is really cool!",
+        "version": 1,
+        "timestamp": "2025-11-23T10:08:10.000Z"
+      }
+    }
+  },
+  {
+    "id": "m10",
+    "author": {
+      "id": "u2",
+      "name": "John Smith",
+      "avatarUrl": "https://i.pravatar.cc/150?img=2",
+      "languages": ["ENG"]
+    },
+    "text": "Agreed. Love how smooth it feels now.",
+    "lang": "ENG",
+    "version": 1,
+    "timestamp": "2025-11-23T10:09:00.000Z",
+    "translations": {
+      "FR": {
+        "message": "D’accord. J’adore la fluidité maintenant.",
+        "version": 1,
+        "timestamp": "2025-11-23T10:09:05.000Z"
+      }
+    }
+  },
+  {
+    "id": "m11",
+    "author": {
+      "id": "u3",
+      "name": "Carlos Ruiz",
+      "avatarUrl": "https://i.pravatar.cc/150?img=3",
+      "languages": ["ES"]
+    },
+    "text": "El rendimiento también mejoró mucho.",
+    "lang": "ES",
+    "version": 1,
+    "timestamp": "2025-11-23T10:10:00.000Z",
+    "translations": {}
+  },
+  {
+    "id": "m12",
+    "author": {
+      "id": "u1",
+      "name": "Jane Doe",
+      "avatarUrl": "https://i.pravatar.cc/150?img=1",
+      "languages": ["RUS"]
+    },
+    "text": "Согласна, стало намного быстрее!",
+    "lang": "RUS",
+    "version": 1,
+    "timestamp": "2025-11-23T10:11:00.000Z",
+    "translations": {
+      "ENG": {
+        "message": "Agree, it became much faster!",
+        "version": 1,
+        "timestamp": "2025-11-23T10:11:05.000Z"
+      }
+    }
+  },
+  {
+    "id": "m13",
+    "author": {
+      "id": "u5",
+      "name": "Yuki Tanaka",
+      "avatarUrl": "https://i.pravatar.cc/150?img=5",
+      "languages": ["JA"]
+    },
+    "text": "ロード時間が半分になりましたね。",
+    "lang": "JA",
+    "version": 1,
+    "timestamp": "2025-11-23T10:12:00.000Z",
+    "translations": {}
+  },
+  {
+    "id": "m14",
+    "author": {
+      "id": "u4",
+      "name": "Marie Dupont",
+      "avatarUrl": "https://i.pravatar.cc/150?img=4",
+      "languages": ["FR"]
+    },
+    "text": "On devrait écrire un article de blog sur cette migration.",
+    "lang": "FR",
+    "version": 1,
+    "timestamp": "2025-11-23T10:13:00.000Z",
+    "translations": {}
+  },
+  {
+    "id": "m15",
+    "author": {
+      "id": "u2",
+      "name": "John Smith",
+      "avatarUrl": "https://i.pravatar.cc/150?img=2",
+      "languages": ["ENG"]
+    },
+    "text": "Good idea! I’ll draft something later today.",
+    "lang": "ENG",
+    "version": 1,
+    "timestamp": "2025-11-23T10:14:00.000Z",
+    "translations": {
+      "FR": {
+        "message": "Bonne idée! Je rédigerai quelque chose plus tard aujourd’hui.",
+        "version": 1,
+        "timestamp": "2025-11-23T10:14:05.000Z"
+      }
+    }
+  },
+  {
+    "id": "m16",
+    "author": {
+      "id": "u3",
+      "name": "Carlos Ruiz",
+      "avatarUrl": "https://i.pravatar.cc/150?img=3",
+      "languages": ["ES"]
+    },
+    "text": "¿Podemos incluir algunas métricas de rendimiento?",
+    "lang": "ES",
+    "version": 1,
+    "timestamp": "2025-11-23T10:15:00.000Z",
+    "translations": {
+      "ENG": {
+        "message": "Can we include some performance metrics?",
+        "version": 1,
+        "timestamp": "2025-11-23T10:15:10.000Z"
+      }
+    }
+  },
+  {
+    "id": "m17",
+    "author": {
+      "id": "u1",
+      "name": "Jane Doe",
+      "avatarUrl": "https://i.pravatar.cc/150?img=1",
+      "languages": ["RUS"]
+    },
+    "text": "Хорошая идея! Это будет полезно читателям.",
+    "lang": "RUS",
+    "version": 1,
+    "timestamp": "2025-11-23T10:16:00.000Z",
+    "translations": {}
+  },
+  {
+    "id": "m18",
+    "author": {
+      "id": "u4",
+      "name": "Marie Dupont",
+      "avatarUrl": "https://i.pravatar.cc/150?img=4",
+      "languages": ["FR"]
+    },
+    "text": "Et peut-être une section sur la localisation?",
+    "lang": "FR",
+    "version": 1,
+    "timestamp": "2025-11-23T10:17:00.000Z",
+    "translations": {
+      "ENG": {
+        "message": "And maybe a section about localization?",
+        "version": 1,
+        "timestamp": "2025-11-23T10:17:10.000Z"
+      }
+    }
+  },
+  {
+    "id": "m19",
+    "author": {
+      "id": "u5",
+      "name": "Yuki Tanaka",
+      "avatarUrl": "https://i.pravatar.cc/150?img=5",
+      "languages": ["JA"]
+    },
+    "text": "それは素晴らしい考えです！",
+    "lang": "JA",
+    "version": 1,
+    "timestamp": "2025-11-23T10:18:00.000Z",
+    "translations": {
+      "ENG": {
+        "message": "That’s a wonderful idea!",
+        "version": 1,
+        "timestamp": "2025-11-23T10:18:10.000Z"
+      }
+    }
+  },
+  {
+    "id": "m20",
+    "author": {
+      "id": "u2",
+      "name": "John Smith",
+      "avatarUrl": "https://i.pravatar.cc/150?img=2",
+      "languages": ["ENG"]
+    },
+    "text": "Perfect, let’s sync later and outline the article.",
+    "lang": "ENG",
+    "version": 1,
+    "timestamp": "2025-11-23T10:19:00.000Z",
+    "translations": {}
+  }
+]
