@@ -1,0 +1,50 @@
+$themes: primary, secondary, tertiary, clear, clear-light;
+$sizes: xs, s, m, l, xl, 2xl;
+
+:host {
+  --spacing-xs: 4px;
+  --spacing-xs-wide: 8px;
+  --spacing-s: 8px;
+  --spacing-s-wide: 12px;
+  --spacing-m: 12px;
+  --spacing-m-wide: 16px;
+  --spacing-l: 16px;
+  --spacing-l-wide: 20px;
+  --spacing-xl: 20px;
+  --spacing-xl-wide: 24px;
+  --spacing-2xl: 24px;
+  --spacing-2xl-wide: 32px;
+  --color-primary: #00aeff;
+  --color-on-primary: #ffffff;
+  --color-secondary: #6b7280;
+  --color-on-secondary: #ffffff;
+  --color-tertiary: #10b981;
+  --color-on-tertiary: #ffffff;
+  --color-clear: transparent;
+  --color-on-clear: #1f2937;
+  --color-clear-light: transparent;
+  --color-on-clear-light: #fff;
+  --font-size-xs: 12px;
+  --font-size-s: 14px;
+  --font-size-m: 16px;
+  --font-size-l: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+}
+
+.button {
+  @each $theme in $themes {
+    &--#{$theme} {
+      background-color: var(--color-#{$theme});
+      color: var(--color-on-#{$theme});
+      border: none;
+    }
+  }
+
+  @each $size in $sizes {
+    &--#{$size} {
+      padding: var(--spacing-#{$size}) var(--spacing-#{$size}-wide);
+      font-size: var(--font-size-#{$size});
+    }
+  }
+}
