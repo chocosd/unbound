@@ -1,0 +1,6 @@
+<button [ngClass]="classes()" type="button" [disabled]="disabled()">
+  @if(icon()) {
+  <lucide-icon [name]="icon()" />
+  }
+  {{ message() }}
+</button>

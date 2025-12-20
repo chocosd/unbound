@@ -1,11 +1,12 @@
+import { provideHttpClient, withFetch } from '@angular/common/http';
 import {
   ApplicationConfig,
+  importProvidersFrom,
   provideBrowserGlobalErrorListeners,
   provideZonelessChangeDetection,
 } from '@angular/core';
 import { provideRouter } from '@angular/router';
-
-import { provideHttpClient, withFetch } from '@angular/common/http';
+import { LucideAngularModule, Paperclip, Plus, Smile } from 'lucide-angular';
 import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
@@ -14,5 +15,6 @@ export const appConfig: ApplicationConfig = {
     provideZonelessChangeDetection(),
     provideRouter(routes),
     provideHttpClient(withFetch()),
+    importProvidersFrom(LucideAngularModule.pick({ Plus, Smile, Paperclip })),
   ],
 };
