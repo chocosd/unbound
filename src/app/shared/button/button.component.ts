@@ -1,11 +1,8 @@
 import { NgClass } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 import { LucideAngularModule, LucideIconData } from 'lucide-angular';
-import { ButtonSizes, Themes } from './button-sizes.enum';
-
-export function AddButtonPrefix<T>(classes: string | keyof T): string {
-  return `button--${String(classes)}`;
-}
+import { ButtonSizes } from './button-sizes.type';
+import { ButtonThemes } from './button-themes.type';
 
 @Component({
   selector: 'app-button',
@@ -15,22 +12,21 @@ export function AddButtonPrefix<T>(classes: string | keyof T): string {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ButtonComponent {
-  public theme = input<Themes | string, string>(Themes.Primary, {
-    transform: AddButtonPrefix,
-  });
+  public theme = input<ButtonThemes>('primary');
   public icon = input<string | LucideIconData | undefined>(undefined);
   public message = input<string>('');
   public disabled = input<boolean>(false);
-  public size = input<string | ButtonSizes, string>(ButtonSizes.Medium, {
-    transform: AddButtonPrefix,
-  });
+  public size = input<ButtonSizes>('m');
 
   public modifierClasses = input<string | string[], string | string[]>('', {
     transform: this.transformModifierClasses,
   });
 
   protected classes = computed(() => {
-    return [this.theme(), this.size(), this.modifierClasses()].filter(Boolean).join(' ');
+    return [this.theme(), this.size(), this.modifierClasses()]
+      .filter(Boolean)
+      .map((className) => `button--${className}`)
+      .join(' ');
   });
 
   private transformModifierClasses(classes: string | string[]): string {
@@ -39,9 +35,9 @@ export class ButtonComponent {
     }
 
     if (Array.isArray(classes)) {
-      return classes.map((v) => AddButtonPrefix(v)).join(' ');
+      return classes.join(' ');
     }
 
-    return AddButtonPrefix(classes);
+    return classes;
   }
 }

@@ -1,0 +1,19 @@
+<div class="modal-backdrop" (click)="close()"></div>
+<div class="modal-panel" role="dialog" aria-modal="true">
+  @if(title()) {
+  <header class="modal-header">
+    <h3 class="modal-title">{{ title() }}</h3>
+    <button class="modal-close" type="button" (click)="close()">✕</button>
+  </header>
+  }
+  <div class="modal-body">
+    @if(message()) {
+    {{ message() }}
+    } @else {
+    <ng-content />
+    }
+  </div>
+  <footer class="modal-footer">
+    <button class="modal-action" type="button" (click)="close()">Close</button>
+  </footer>
+</div>

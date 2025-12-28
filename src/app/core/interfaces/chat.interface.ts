@@ -18,14 +18,11 @@ export interface User {
 
 export interface ChatMessage {
   id: string;
-  author: Pick<User, 'id' | 'name' | 'avatarUrl' | 'languages'>;
-  text: string; // original text
-  lang: Language; // original language
-  version: number; // bump when edited
-  timestamp: string; // created
-  editedAt?: string; // last edited
-  translations: Translations;
-  reactions?: { key: string; count: number; reactedByMe?: boolean }[];
+  message: string;
+  user: { id: string; name: string; image: string };
+  timestamp: Date;
+  reactions: { [index: string]: number }[];
+  version: number;
 }
 
 export interface DisplayMessage {

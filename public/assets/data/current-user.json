@@ -1,0 +1,9 @@
+{
+  "id": "u_123",
+  "username": "steve",
+  "displayName": "Steve D",
+  "avatarUrl": "/assets/avatars/steve.png",
+  "locale": "en-US",
+  "status": "online",
+  "bio": "Building a real-time translate chat app."
+}
