@@ -3,6 +3,7 @@ html,
 body {
   height: 100%;
   max-height: 100vh;
+  width: 100%;
   margin: 0;
   font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
@@ -603,5 +604,62 @@ body {
   .app-shell {
     border-radius: 0;
     max-width: 100%;
+  }
+}
+
+/* Global CSS variables for shared components (buttons, overlays, etc.) */
+:root {
+  /* Spacing scale used by buttons */
+  --spacing-xs: 4px;
+  --spacing-xs-wide: 8px;
+  --spacing-s: 8px;
+  --spacing-s-wide: 12px;
+  --spacing-m: 12px;
+  --spacing-m-wide: 16px;
+  --spacing-l: 16px;
+  --spacing-l-wide: 20px;
+  --spacing-xl: 20px;
+  --spacing-xl-wide: 24px;
+  --spacing-2xl: 24px;
+  --spacing-2xl-wide: 32px;
+
+  /* Button theme colors */
+  --color-primary: #00aeff;
+  --color-on-primary: #ffffff;
+  --color-secondary: #6b7280;
+  --color-on-secondary: #ffffff;
+  --color-tertiary: #10b981;
+  --color-on-tertiary: #ffffff;
+  --color-danger: #ef4444;
+  --color-on-danger: #ffffff;
+  --color-success: #22c55e;
+  --color-on-success: #ffffff;
+  --color-warning: #f59e0b;
+  --color-on-warning: #1f2937;
+  --color-info: #3b82f6;
+  --color-on-info: #ffffff;
+  --color-clear: transparent;
+  --color-on-clear: #1f2937;
+
+  /* Font sizes used by button sizes */
+  --font-size-xs: 12px;
+  --font-size-s: 14px;
+  --font-size-m: 16px;
+  --font-size-l: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-clear: transparent;
+    --color-on-clear: #fff;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-clear: transparent;
+    --color-on-clear: #1f2937;
   }
 }
